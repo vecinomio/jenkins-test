@@ -6,14 +6,14 @@ pipeline {
             steps {
                 dir('app_dir') { // "dir" block changes the jenkins default workdir to your app directory.
                     sh 'pwd' // Check changed directory.
-                    sh './preporation.sh' // Executes the command for stage "Environment preporation".
+                    sh 'bash preporation.sh' // Executes the command for stage "Environment preporation".
                 }
             }
         }
         stage ('Tests') {
             steps {
                 dir('app_dir') {
-                    sh './test.sh' // Executes the command for stage "Tests".
+                    sh 'bash test.sh' // Executes the command for stage "Tests".
                 }
             }
         }
