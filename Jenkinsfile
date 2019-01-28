@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'name1' } // "name1" is the label of instance, where the test will take place.
+    agent { label 'cnt7' } // "cnt7" is the label of instance, where the test will take place.
 
     stages {
         stage ('Environment preporation') {
